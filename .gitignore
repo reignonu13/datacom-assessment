@@ -1,0 +1,15 @@
+# Python run-time files
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+.ruff_cache/
+
+# Reports
+reports/
+
+# Python virtual Environment
+playwright-qa/

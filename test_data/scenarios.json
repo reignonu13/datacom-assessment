@@ -1,0 +1,270 @@
+{
+  "defaults": {
+    "first_name": "Test",
+    "last_name": "User",
+    "phone": "1234567890",
+    "email": "test@example.com",
+    "password": "Valid1Pass",
+    "check_terms": true
+  },
+  "submissions": [
+    {
+      "id": "BugForm_24",
+      "first_name": "John",
+      "last_name": "Smith",
+      "phone": "1234567890",
+      "country": "United Kingdom",
+      "email": "john.smith@example.com",
+      "password": "SecureP1",
+      "check_terms": true,
+      "expected_state": "success"
+    },
+    {
+      "id": "BugForm_25",
+      "first_name": "Alice",
+      "last_name": "Jones",
+      "phone": "0712345678",
+      "country": "France",
+      "email": "alice@test.com",
+      "password": "Abc123",
+      "check_terms": true,
+      "expected_state": "success"
+    },
+    {
+      "id": "BugForm_26",
+      "first_name": "Bob",
+      "last_name": "Brown",
+      "phone": "9876543210",
+      "country": "Germany",
+      "email": "bob.brown@test.org",
+      "password": "12345678901234567890",
+      "check_terms": true,
+      "expected_state": "success"
+    },
+    {
+      "id": "BugForm_27",
+      "first_name": "Carol",
+      "last_name": "White",
+      "phone": "1111111111",
+      "email": "carol@example.com",
+      "password": "Pass123",
+      "check_terms": true,
+      "expected_state": "success"
+    },
+    {
+      "id": "BugForm_28",
+      "first_name": "Dan",
+      "last_name": "Taylor",
+      "phone": "2222222222",
+      "country": "Canada",
+      "email": "dan@example.com",
+      "password": "Pass456",
+      "check_terms": true,
+      "expected_state": "success"
+    },
+    {
+      "id": "BugForm_29",
+      "first_name": "Eve",
+      "last_name": "Martin",
+      "phone": "1234567899",
+      "country": "Australia",
+      "email": "eve@example.com",
+      "password": "EvePass1",
+      "check_terms": true,
+      "expected_state": "success"
+    },
+    {
+      "id": "BugForm_30",
+      "first_name": "Frank",
+      "last_name": "Davis",
+      "phone": "0000000000",
+      "country": "Spain",
+      "email": "frank@example.com",
+      "password": "Frank123",
+      "check_terms": true,
+      "expected_state": "success"
+    },
+    {
+      "id": "BugForm_31",
+      "phone": "1234567890",
+      "country": "France",
+      "expected_state": "success",
+      "expected_output": {
+        "phone": "1234567890"
+      }
+    },
+    {
+      "id": "BugForm_32",
+      "phone": "12345678901",
+      "country": "France",
+      "expected_state": "success",
+      "expected_output": {
+        "phone": "12345678901"
+      }
+    },
+    {
+      "id": "BugForm_33",
+      "first_name": "",
+      "expected_state": "error",
+      "expected_message": "First Name is required"
+    },
+    {
+      "id": "BugForm_34",
+      "first_name": "John",
+      "expected_state": "success"
+    },
+    {
+      "id": "BugForm_35",
+      "last_name": "",
+      "expected_state": "error",
+      "expected_message": "Last Name is required"
+    },
+    {
+      "id": "BugForm_36",
+      "last_name": "Doe",
+      "expected_state": "success"
+    },
+    {
+      "id": "BugForm_37",
+      "phone": "12345",
+      "expected_state": "error",
+      "expected_message": "at least 10 digits"
+    },
+    {
+      "id": "BugForm_38",
+      "phone": "abcdefghij",
+      "expected_state": "error",
+      "expected_message": "digits only"
+    },
+    {
+      "id": "BugForm_39",
+      "expected_state": "error",
+      "expected_message": "select a country"
+    },
+    {
+      "id": "BugForm_40",
+      "email": "",
+      "expected_state": "error",
+      "expected_message": "Email is required"
+    },
+    {
+      "id": "BugForm_41",
+      "email": "notanemail",
+      "expected_state": "error",
+      "expected_message": "valid email"
+    },
+    {
+      "id": "BugForm_42",
+      "email": "user@",
+      "expected_state": "error",
+      "expected_message": "valid email"
+    },
+    {
+      "id": "BugForm_43",
+      "email": "john@example.com",
+      "expected_state": "success"
+    },
+    {
+      "id": "BugForm_44",
+      "password": "abc12",
+      "expected_state": "error",
+      "expected_message": "should contain between"
+    },
+    {
+      "id": "BugForm_45",
+      "password": "abc123",
+      "expected_state": "success"
+    },
+    {
+      "id": "BugForm_46",
+      "password": "abcdefghij123456789",
+      "expected_state": "success"
+    },
+    {
+      "id": "BugForm_47",
+      "password": "abcdefghij1234567890",
+      "expected_state": "success"
+    },
+    {
+      "id": "BugForm_48",
+      "password": "abcdefghij12345678901",
+      "expected_state": "error",
+      "expected_message": "should contain between"
+    },
+    {
+      "id": "BugForm_49",
+      "check_terms": false,
+      "expected_state": "error",
+      "expected_message": "terms and conditions"
+    },
+    {
+      "id": "BugForm_50",
+      "check_terms": true,
+      "expected_state": "success"
+    },
+    {
+      "id": "BugForm_51",
+      "first_name": "",
+      "last_name": "",
+      "phone": "",
+      "email": "",
+      "password": "",
+      "check_terms": false,
+      "expected_state": "error",
+      "expected_message": "First Name is required"
+    },
+    {
+      "id": "BugForm_52",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "check_terms": false,
+      "expected_state": "error",
+      "expected_message": "First Name is required"
+    },
+    {
+      "id": "BugForm_53",
+      "country": "France",
+      "expected_state": "success",
+      "expected_output": {
+        "first_name": "Test",
+        "country": "France",
+        "email": "test@example.com"
+      }
+    },
+    {
+      "id": "BugForm_54",
+      "last_name": "Smith",
+      "expected_state": "success",
+      "expected_output": {
+        "last_name": "Smith"
+      }
+    },
+    {
+      "id": "BugForm_55",
+      "expected_state": "success",
+      "expected_css_class": "alert-success"
+    },
+    {
+      "id": "BugForm_56",
+      "expected_state": "success",
+      "check_password_hidden": true
+    },
+    {
+      "id": "BugForm_57",
+      "email": "storage@test.com",
+      "expected_state": "success",
+      "check_no_localstorage": true
+    },
+    {
+      "id": "BugForm_58",
+      "expected_state": "success",
+      "then_refresh": true
+    },
+    {
+      "id": "BugForm_59",
+      "expected_state": "success",
+      "then_double_click": true
+    }
+  ]
+}

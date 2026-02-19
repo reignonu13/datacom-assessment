@@ -1,0 +1,157 @@
+[
+  {
+    "id": "BugForm_01",
+    "type": "label",
+    "input_id": "firstName",
+    "expected": "First Name*"
+  },
+  {
+    "id": "BugForm_02",
+    "type": "label",
+    "input_id": "lastName",
+    "expected": "Last Name*"
+  },
+  {
+    "id": "BugForm_03",
+    "type": "label",
+    "input_id": "phone",
+    "expected": "Phone number*"
+  },
+  {
+    "id": "BugForm_04",
+    "type": "label",
+    "input_id": "emailAddress",
+    "expected": "Email address*"
+  },
+  {
+    "id": "BugForm_05",
+    "type": "label",
+    "input_id": "password",
+    "expected": "Password*"
+  },
+  {
+    "id": "BugForm_06",
+    "type": "label",
+    "input_id": "countries_dropdown_menu",
+    "expected": "Country"
+  },
+  {
+    "id": "BugForm_07",
+    "type": "field_type",
+    "input_id": "emailAddress",
+    "expected": "email"
+  },
+  {
+    "id": "BugForm_08",
+    "type": "field_type",
+    "input_id": "password",
+    "expected": "password"
+  },
+  {
+    "id": "BugForm_09",
+    "type": "hint",
+    "input_id": "password",
+    "expected": "Password length validation: 6 to 20 characters"
+  },
+  {
+    "id": "BugForm_10",
+    "type": "tc_link",
+    "input_id": "exampleCheck1",
+    "expected": true
+  },
+  {
+    "id": "BugForm_11",
+    "type": "tc_enabled",
+    "input_id": "exampleCheck1",
+    "expected": true
+  },
+  {
+    "id": "BugForm_12",
+    "type": "note_position",
+    "expected": 0
+  },
+  {
+    "id": "BugForm_13",
+    "type": "placeholder_disabled",
+    "input_id": "countries_dropdown_menu",
+    "expected": true
+  },
+  {
+    "id": "BugForm_14",
+    "type": "option_value",
+    "display": "Afghanistan",
+    "expected": "Afghanistan"
+  },
+  {
+    "id": "BugForm_15",
+    "type": "option_value",
+    "display": "Curacao",
+    "expected": "Curacao"
+  },
+  {
+    "id": "BugForm_16",
+    "type": "option_value",
+    "display": "Korea South",
+    "expected": "Korea South"
+  },
+  {
+    "id": "BugForm_17",
+    "type": "option_value",
+    "display": "Philippines",
+    "expected": "Philippines"
+  },
+  {
+    "id": "BugForm_18",
+    "type": "option_value",
+    "display": "United Arab Emirates",
+    "expected": "United Arab Emirates"
+  },
+  {
+    "id": "BugForm_19",
+    "type": "option_value",
+    "display": "Uruguay",
+    "expected": "Uruguay"
+  },
+  {
+    "id": "BugForm_20",
+    "type": "display_name",
+    "search": "Cote D'Ivoire",
+    "expected": true
+  },
+  {
+    "id": "BugForm_21",
+    "type": "display_name",
+    "search": "Namibia",
+    "expected": true
+  },
+  {
+    "id": "BugForm_22",
+    "type": "display_name",
+    "search": "Wallis & Futuna Is",
+    "expected": true
+  },
+  {
+    "id": "BugForm_23",
+    "type": "label_for",
+    "input_id": "phone",
+    "expected": "phone"
+  },
+  {
+    "id": "BugForm_60",
+    "type": "label_for",
+    "input_id": "countries_dropdown_menu",
+    "expected": "countries_dropdown_menu"
+  },
+  {
+    "id": "BugForm_61",
+    "type": "label_for",
+    "input_id": "emailAddress",
+    "expected": "emailAddress"
+  },
+  {
+    "id": "BugForm_62",
+    "type": "label_for",
+    "input_id": "password",
+    "expected": "password"
+  }
+]
